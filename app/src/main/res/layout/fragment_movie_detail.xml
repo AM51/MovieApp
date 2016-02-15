@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginTop="@dimen/view_top_margin"
+            android:layout_marginBottom="@dimen/view_bottom_margin"
+            android:paddingLeft="@dimen/text_left_margin"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2b78b0">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_title"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingTop="@dimen/padding_top"
+                android:textSize="25dp"
+                android:layout_weight="5"
+                android:textColor="@android:color/white"
+                />
+
+            <CheckBox
+                android:id="@+id/addToFav"
+                android:layout_width="0px"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/custom_checkbox"
+                android:button="@android:color/transparent"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_top_margin"
+            android:layout_marginBottom="@dimen/view_bottom_margin"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:id="@+id/movie_overview"
+            android:textColor="#554F4F"
+            />
+
+        <View
+            style="@style/CodeFont"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Trailer"
+            android:id="@+id/playTrailer"
+            android:background="#f6f7f9"
+            />
+
+        <View
+            style="@style/CodeFont"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:id="@+id/showReviews"
+            android:background="#f6f7f9"
+            />
+
+        <View
+            style="@style/CodeFont"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textColor="#773B3B"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/view_top_margin"
+            android:layout_marginBottom="@dimen/view_bottom_margin"
+            android:paddingLeft="@dimen/padding_left"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_release_date"
+            android:text="Release Date : "
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="@dimen/padding_left"
+            android:textColor="#554F4F"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_language"
+            android:text="Language : "
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="@dimen/padding_left"
+            android:textColor="#554F4F"/>
+
+    </LinearLayout>
+</ScrollView>

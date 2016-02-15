@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.movieapp.MainActivity">
+
+    <item
+        android:id="@+id/sort_by_pop"
+        android:orderInCategory="97"
+        android:title="@string/action_sort_by_pop"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_by_rating"
+        android:orderInCategory="98"
+        android:title="@string/action_sort_by_rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/favMovies"
+        android:orderInCategory="99"
+        android:title="@string/action_fav"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:title="@string/action_refresh"
+        app:showAsAction="never" />
+
+</menu>
